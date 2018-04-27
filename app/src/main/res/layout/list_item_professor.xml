@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="@dimen/margin_default">
+
+	<android.support.v7.widget.AppCompatImageView
+		android:id="@+id/ivProfessorLogoSmall"
+		android:layout_width="@dimen/img_professor_logo_small"
+		android:layout_height="@dimen/img_professor_logo_small"
+		android:contentDescription="@string/lbl_professor_logo_content_description"
+		app:srcCompat="@drawable/ic_man_svg" />
+
+	<TextView
+		android:id="@+id/tvProfessorName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/margin_default"
+		android:layout_toEndOf="@id/ivProfessorLogoSmall"
+		android:textSize="@dimen/txt_title_size"
+		android:textStyle="bold"
+		tools:text="VERY COOL PROFESSOR (no he isn't)" />
+
+	<TextView
+		android:id="@+id/tvUniversity"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignStart="@id/tvProfessorName"
+		android:layout_below="@id/tvProfessorName"
+		android:textSize="@dimen/txt_subtitle_size"
+		tools:text="IFNTUOG" />
+
+</RelativeLayout>

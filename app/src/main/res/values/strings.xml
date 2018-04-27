@@ -1,3 +1,5 @@
 <resources>
 	<string name="app_name">stdRating</string>
+
+	<string name="lbl_professor_logo_content_description">Professor Logo</string>
 </resources>
